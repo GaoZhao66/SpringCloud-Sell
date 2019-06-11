@@ -1,0 +1,12 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: false   #是否向服务注册中心注册自己
+  server:
+    enable-self-preservation: false   #检查client端的上线率
+spring:
+  application:
+    name: eureaka
+server:
+  port: 8761
