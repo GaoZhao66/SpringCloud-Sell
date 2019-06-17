@@ -24,7 +24,9 @@ public class ProductInfoRepositoryTest extends ProductApplicationTests {
         System.out.println(productInfoList);
     }
 
-
-
-
+    @Test
+    public void findByProductIdIn() {
+        List<ProductInfo> list =  productInfoRepository.findByProductIdIn(Arrays.asList("157875196366160022","157875227953464068"));
+        Assert.assertTrue(list.size()>0);
+    }
 }
