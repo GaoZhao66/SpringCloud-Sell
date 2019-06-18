@@ -15,7 +15,7 @@ public interface ProductClient {
     String productMsg();
 
     /**
-     * 根据productId集合 查询商品信息
+     * 根据productId集合 查询商品信息product
      * */
     @PostMapping("/product/listForOrder")
     public List<ProductInfo> listForOrder(List<String> productIdList);
