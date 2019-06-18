@@ -15,4 +15,12 @@ public class CartDTO {
      * */
     private Integer productQuantity;
 
+    public CartDTO(){
+
+    }
+
+    public CartDTO(String productId, Integer productQuantity) {
+        this.productId = productId;
+        this.productQuantity = productQuantity;
+    }
 }

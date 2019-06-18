@@ -14,7 +14,6 @@ public interface ProductClient {
     @GetMapping("/msg")
     String productMsg();
 
-
     /**
      * 根据productId集合 查询商品信息
      * */
