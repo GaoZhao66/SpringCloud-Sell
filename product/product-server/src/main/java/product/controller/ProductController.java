@@ -80,6 +80,7 @@ public class ProductController {
      * */
     @PostMapping("/decreaseStock")
     public void decreaseStock(@RequestBody List<CartDTO> cartDTOList){
+
         productService.decreaseStock(cartDTOList);
     }
 
