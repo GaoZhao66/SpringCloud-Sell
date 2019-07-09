@@ -3,6 +3,14 @@ server:
 spring:
   application:
     name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/GaoZhao66/config-repo.git
+          username: GaoZhao66
+          password: gao15032611525..
+          basedir: D:\\config       #把远端配置文件拉到本地
 eureka:
   client:
     service-url:
