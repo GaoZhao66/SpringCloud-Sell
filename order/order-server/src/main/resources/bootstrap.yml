@@ -1,9 +1,16 @@
 spring:
   application:
-    name: order
+     name: order
   cloud:
     config:
       discovery:
         enabled: true
         service-id: CONFIG
       profile: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+    preferIpAddress : true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
